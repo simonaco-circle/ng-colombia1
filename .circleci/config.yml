@@ -35,5 +35,8 @@ jobs:
       - run: yarn ng build --prod --no-progress
       # run tests!
       - run: yarn ng test --single-run --no-progress
+      - run:
+          command: |
+            sh scripts/publish.sh
 
 
